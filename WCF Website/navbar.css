@@ -165,7 +165,7 @@ footer {
     color: rgb(177, 4, 4);    
 }
 .clearbar ul li#socials a {
-    margin-right: 10px;
+    margin-right: auto;
 }
 .fa-instagram, .fa-x-twitter, .fa-linkedin-in {
     font-size: 1.3em;
