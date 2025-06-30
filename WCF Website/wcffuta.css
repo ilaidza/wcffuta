@@ -197,3 +197,61 @@ span p#month {
     color: black;
     text-decoration: underline;
 }
+
+
+/*stg new alumni*/
+
+.alumni-container {
+    scroll-snap-align: start;
+    height: 41vh;
+    width: 200px;
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px #575353;
+    transition: transform 0.3s ease;
+}
+  .alumni-container:hover {
+            transform: scale(1.03);
+        }
+.alumni-container img {
+    width: 170px;
+    height: 19vh;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: saturate(0);
+    object-position: top;
+    box-shadow: 2px black;
+}
+.alumni-container span {
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .7em;
+}
+.alumni-container p#title {
+    font-size: .5em;
+    letter-spacing: 2px;
+    text-align: justify;
+    color: #0e0d0d;
+}
+.alumni-container p#occupation {
+    font-size: .6em;
+    color: rgb(224, 166, 6);
+}
+.alumni-container p {
+    font-size: .6em;
+    font-weight: 400;
+    color: #575353;
+}
+.alumni-container a {
+    font-size: .6em;
+    color: rgb(224, 166, 6);
+    margin-right: 1px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.alumni-container a:hover {
+    color: black;
+    background-color: transparent;
+}
