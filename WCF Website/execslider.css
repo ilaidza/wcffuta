@@ -13,7 +13,7 @@
             width: 100%;
             margin: 0 auto;
             position: relative;
-            padding: 20px;
+            padding: 5px;
         }
 
         .slider-track {
@@ -42,7 +42,7 @@
             align-items: flex-end;
             color: white;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-            padding: 20px;
+            padding: 10px;
             font-size: 24px;
             transition: transform 0.3s ease;
         }
@@ -82,18 +82,17 @@
 
 
         /* Navigation buttons */
-       /* .nav-btn {
-            position: absolute;
-            top: 50%;
+        .nav-btn {
             transform: translateY(-50%);
             width: 40px;
             height: 40px;
-            background: rgba(0,0,0,0.5);
-            color: white;
+            background: rgba(71, 67, 67, 0.5);
+            color: rgb(19, 18, 18);
             border: none;
             border-radius: 50%;
             font-size: 20px;
             cursor: pointer;
+            margin-top: 50px;
             z-index: 10;
             display: flex;
             justify-content: center;
@@ -101,12 +100,12 @@
         }
 
         .prev-btn {
-            left: -50px;
+            float: left;
         }
 
         .next-btn {
-            right: -50px;
-        }*/
+            display: inline;
+        }
 
         /* Hide scrollbar */
         .slider-track {
