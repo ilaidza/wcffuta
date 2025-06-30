@@ -1,0 +1,73 @@
+.heading, .objectives {
+    padding: 10px;
+}
+img {
+    border-radius: 15px;
+}
+.focus {
+    background-color: rgb(235, 227, 227);
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    overflow: hidden;
+}
+.focus .sections {
+    width: 45vw;
+    height: 45vh;
+    border: none;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px rgba(109, 21, 21, 0.226);
+    background-color: rgb(248, 245, 245);
+}
+.sections img {
+    width: 100%;
+    object-fit: cover
+} 
+.sections ul li {
+    text-align: left;
+    margin-left: -20px;
+    font-size: 15px;
+}
+.sections ul lh {
+    font-size: 12px;
+    text-align: left;
+    margin-left: -30px;
+    font-weight: bold;
+}
+h2 {
+    border-block: 1px solid black;
+    width: max-content;
+}
+.service-units {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid;
+}
+.service-units .unit-container {
+    padding: 5px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+.unit-container img {
+    width: 100%;
+    height: 250px;
+}
+.unit-container span {
+    font-weight: 600;
+    font-size: 1em;
+}
+.unit-container p {
+    color: rgba(0, 0, 0, 0.74);
+    font-size: 13px;
+}

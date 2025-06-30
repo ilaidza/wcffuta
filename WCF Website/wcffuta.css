@@ -1,0 +1,197 @@
+body {
+    background: #f0f0f0;
+}
+.heading {
+    background: url(12.jpeg);
+    background-origin: center;
+    background-size: cover;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(208, 218, 219);
+    transition: 2s;
+}
+.heading button {
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid rgb(177, 4, 4);
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    transition: 1s;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+}
+.heading button:hover {
+    background-color: rgb(177, 4, 4);
+    background-origin: right;
+    text-decoration: underline;
+    border: none;
+    color: rgb(224, 213, 213);
+}
+.upcoming {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.upcoming span {
+    background-color: rgb(177, 4, 4);
+    color: rgb(231, 211, 184);
+    padding: 5px;
+    height: 6vh;
+    text-align: center;
+}
+span p#day {
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-top: -1px;
+}
+span p#month {
+    margin-top: -30px;
+    font-weight: bold;
+    font-size: 10px;
+}
+.upcoming p {
+    font-size: 12px;
+    font-weight: bold;
+
+}
+.upcoming a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.upcoming a#map-btn {
+    text-decoration: none;
+    border: 1px solid rgb(177, 4, 4);
+    padding: 10px;
+    color: rgb(29, 25, 25);
+    transition: 1s ease;
+}
+.upcoming a#map-btn:hover {
+    width: 19vw;
+    height: 40px;
+    border: none;
+    color: white;
+    transition: 1s;
+    background-color: black;
+}
+.upcoming #map {
+    transition: 1s;
+}
+.fa-calendar,.fa-location-dot {
+    color: rgb(177, 4, 4);
+    font-size: 14px;
+}
+ hr {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#aboutus .aboutus {
+    background: url(9.jpg);
+    background-size: cover;
+    padding: 20px;
+    width: 90%;
+    height: 65vh;
+    position: relative;
+}
+.aboutus h3 {
+    font-size: 2em;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    color: rgb(185, 32, 32);
+}
+.aboutus p {
+    font-size: 1em;
+    position: absolute;
+    left: 9px;
+    top: 2px;
+    color: white;
+    font-weight: bold;
+}
+.aboutus a {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    left: 8px;
+    bottom: 5px;
+    font-weight: bold;
+    transition: 1s;
+}
+.aboutus a:hover {
+    text-decoration: overline;
+}
+/*.services {
+    width: 100%;
+    overflow: hidden;
+    padding: 5px;
+
+}
+#services {
+    width: 30%;
+    height: 50%;
+    font-size: 13px;
+    border: 1px solid ;
+    padding: 2px;
+}
+#services img {
+    width: 100%;
+}*/
+.showcase h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: rgb(105, 110, 110);
+}
+.sections {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    margin: px;
+}
+.sections img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.sections p#head {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+.sections p {
+    color: rgb(97, 96, 93);
+    font-size: 12px;
+}
+.sections a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.sections a:hover {
+    color: black;
+    text-decoration: underline;
+}

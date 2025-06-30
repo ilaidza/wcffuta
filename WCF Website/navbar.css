@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+}
+.headbar {
+    background-color: rgb(17, 7, 7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    color: white;
+    top: 0;
+    z-index: 10;
+}
+.logo {
+    display: flex;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 50%;
+}
+.logo span {
+    margin-left: 5px;
+}
+.fa-bars {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.fa-xmark {
+    font-size: 25px;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav button {
+    padding: 7px 3px;
+    border: 1px solid rgb(177, 4, 4);
+    font-weight: bold;
+    top: 0;
+    background-color: transparent;
+    color: white;
+    margin-left: 5px;
+    border-radius: 3px;
+    transition: 1s;
+    cursor: progress;
+}
+
+.nav button:hover {
+    background-color: rgb(177, 4, 4);
+    color: white;
+}
+.navcontent {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    flex-direction: column;
+    height: 34vh;
+    width: 100%;
+    margin-top: 50px;
+    z-index: 9;
+    background-color: rgb(24, 10, 10);
+    transition: 1s ease;
+    box-sizing: border-box;
+}
+.navcontent ul li {
+    text-align: left;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: -20px;
+    padding: 12px;
+    width: 100%;
+    transition: 1s;
+}
+.navcontent li a {
+    text-decoration: none;
+    color: rgb(255, 252, 252);
+}
+.navcontent li:hover {
+    background-color: rgb(207, 10, 10);
+}
+
+footer {
+    background-color: black;
+    color: rgb(134, 123, 123);
+    padding: 7px;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+.clearbar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.clearbar h3 {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    display: block;
+}
+.clearbar span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.clearbar span input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+.clearbar hr {
+    width: 70%;
+    margin-top: 50px;
+    color: rgb(177, 4, 4);
+}
+.clearbar span input:focus {
+    border: 1px solid rgb(177, 4, 4);
+    border: none;
+}
+.clearbar .listcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;margin-top: 30px;
+
+}
+.clearbar #links {
+    width: 40vw;
+}
+.clearbar #links ul li {
+    list-style: none;
+    text-align: left;
+    margin: 12px;
+    font-size: 1.3em;
+}
+.clearbar li a {
+    text-decoration: none;
+    color: rgb(122, 141, 141);
+    transition: 1s;
+    font-size: 0.8em;
+}
+.clearbar li a:hover {
+    color: rgb(177, 4, 4);    
+}
+.clearbar ul li#socials a {
+    margin-right: 10px;
+}
+.fa-instagram, .fa-x-twitter, .fa-linkedin-in {
+    font-size: 1.3em;
+}
+.fa-instagram:hover, .fa-x-twitter:hover, .fa-linkedin-in:hover {
+    color: rgb(177, 4, 4);
+}
