@@ -44,30 +44,19 @@ h2 {
     border-block: 1px solid black;
     width: max-content;
 }
-.service-units {
+.family-song {
     width: 100%;
     padding: 20px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    overflow: hidden;
-    border: 1px solid;
-}
-.service-units .unit-container {
-    padding: 5px;
-    width: 300px;
-    height: auto;
+    font-size:30px; 
+    font-weight: bold;
     text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
-.unit-container img {
-    width: 100%;
-    height: 250px;
-}
-.unit-container span {
-    font-weight: 600;
+.family-song h3 {
     font-size: 1em;
-}
-.unit-container p {
-    color: rgba(0, 0, 0, 0.74);
-    font-size: 13px;
+    border-block: 1px solid;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 20px;
 }

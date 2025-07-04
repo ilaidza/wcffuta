@@ -59,9 +59,11 @@
             transform: scale(1.03);
         }
 .exec-container img {
-    height: 18vh;
+    height: 19vh;
+    width: 140px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top;
     box-shadow: 2px black;
 }
 .exec-container span {
