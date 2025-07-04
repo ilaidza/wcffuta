@@ -165,7 +165,8 @@ footer {
     font-size: 0.8em;
 }
 .clearbar li a:hover {
-    color: rgb(177, 4, 4);    
+    color: rgb(177, 4, 4);  
+    background: transparent;  
 }
 .clearbar ul li#socials a {
     margin-right: auto;
