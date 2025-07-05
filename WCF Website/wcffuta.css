@@ -1,5 +1,6 @@
 body {
     background: #f0f0f0;
+    max-width: 550px;
 }
 .heading {
     background: url(12.jpeg);
@@ -254,4 +255,27 @@ span p#month {
 .alumni-container a:hover {
     color: black;
     background-color: transparent;
+}
+.exception {
+        display: none;
+    }
+@media only screen and (min-width: 555px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #everything {
+        display: none;
+    }
+    .exception {
+        display: flex;
+        align-items: center;
+        margin-top: 50%;
+        padding: 20px;
+    }
+    .exception p {
+        text-align: center;
+        color: black;
+    }
 }
