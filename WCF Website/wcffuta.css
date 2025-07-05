@@ -1,6 +1,6 @@
 body {
     background: #f0f0f0;
-    max-width: 550px;
+    max-width: 600px;
 }
 .heading {
     background: url(12.jpeg);
@@ -259,7 +259,7 @@ span p#month {
 .exception {
         display: none;
     }
-@media only screen and (min-width: 555px) {
+@media only screen and (min-width: 600px) {
     body {
         display: flex;
         justify-content: center;
