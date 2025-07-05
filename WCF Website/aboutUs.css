@@ -13,14 +13,14 @@ img {
     gap: 25px;
     flex-wrap: wrap;
     padding: 5px;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: auto;
     align-items: center;
     overflow: hidden;
 }
 .focus .sections {
-    width: 43vw;
+    width: 45%;
     height: 45vh;
     border: none;
     padding: 5px;
