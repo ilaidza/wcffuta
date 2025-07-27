@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: flex;
+    overflow: hidden;
+    background-color: rgb(114, 44, 44);
+    margin-bottom: 50px;
+}
+.main-container {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+
+}
+.main-container #texts {
+    width: 80%;
+}
+#texts span {
+    font-weight: 900;
+    font-size: 2em;
+}
+.main-container #icon {
+    width: 100px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    font-size: 11px;
+}
+.main-container #icon img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

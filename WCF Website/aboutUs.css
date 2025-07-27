@@ -1,0 +1,86 @@
+body {
+    max-width: 600px;
+}
+.heading, .objectives {
+    padding: 10px;
+}
+img {
+    border-radius: 15px;
+}
+.focus {
+    background-color: rgb(235, 227, 227);
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    overflow: hidden;
+}
+.focus .sections {
+    width: 45%;
+    height: 45vh;
+    border: none;
+    padding: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 2px 2px rgba(109, 21, 21, 0.226);
+    background-color: rgb(248, 245, 245);
+}
+.sections img {
+    width: 100%;
+    object-fit: cover
+} 
+.sections ul li {
+    text-align: left;
+    margin-left: -20px;
+    font-size: 15px;
+}
+.sections ul lh {
+    font-size: 12px;
+    text-align: left;
+    margin-left: -30px;
+    font-weight: bold;
+}
+h2 {
+    border-block: 1px solid black;
+    width: max-content;
+}
+.family-song {
+    width: 100%;
+    padding: 20px;
+    font-size:30px; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.family-song h3 {
+    font-size: 1em;
+    border-block: 1px solid;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.exception {
+        display: none;
+    }
+@media only screen and (min-width: 600px) {
+    body {
+        max-width: 100%;
+    }
+    #everything {
+        display: none;
+    }
+    .exception {
+        margin-top: 25%;
+        display: block;
+        padding: 20px;
+    }
+    .exception p {
+        text-align: center;
+        color: black;
+    }
+}
