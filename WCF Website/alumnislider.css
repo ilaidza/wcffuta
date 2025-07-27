@@ -35,7 +35,7 @@
 
 .alumni-container {
     scroll-snap-align: start;
-    height: 300px;
+    height: auto;
     width: 200px;
     padding: 10px;
     text-align: left;
