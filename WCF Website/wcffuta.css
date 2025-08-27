@@ -1,9 +1,8 @@
 body {
     background: #f0f0f0;
-    max-width: 600px;
 }
 .heading {
-    background: url(12.jpeg);
+    background: url(images/headpic1.jpg);
     background-origin: center;
     background-size: cover;
     height: 90vh;
@@ -12,8 +11,13 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    color: rgb(208, 218, 219);
+    color: rgb(210, 214, 197);
+    text-shadow: 2px 2px #0c0606;
     transition: 2s;
+    animation-name: bgchange;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
 }
 .heading button {
     margin-top: 10px;
@@ -42,6 +46,28 @@ body {
     align-items: center;
     text-align: center;
 
+}
+.upcoming a#map-btn {
+    text-decoration: none;
+    border: 1px solid rgb(177, 4, 4);
+    padding: 10px;
+    color: rgb(29, 25, 25);
+    transition: 1s ease;
+}
+.upcoming a#map-btn:hover {
+    width: 109px;
+    height: 40px;
+    border: none;
+    color: white;
+    transition: 1s;
+    background-color: black;
+}
+.upcoming #map {
+    transition: 1s;
+}
+.fa-calendar,.fa-location-dot {
+    color: rgb(177, 4, 4);
+    font-size: 14px;
 }
 .upcoming span {
     background-color: rgb(177, 4, 4);
@@ -72,48 +98,32 @@ span p#month {
     margin-bottom: 20px;
     margin-top: 10px;
 }
-.upcoming a#program {
+.upcoming p#program {
     font-size: 1.2em;
     font-weight: 600;
-}
-.upcoming a#map-btn {
-    text-decoration: none;
-    border: 1px solid rgb(177, 4, 4);
-    padding: 10px;
-    color: rgb(29, 25, 25);
-    transition: 1s ease;
-}
-.upcoming a#map-btn:hover {
-    width: 109px;
-    height: 40px;
-    border: none;
-    color: white;
-    transition: 1s;
-    background-color: black;
-}
-.upcoming #map {
-    transition: 1s;
-}
-.fa-calendar,.fa-location-dot {
     color: rgb(177, 4, 4);
-    font-size: 14px;
+}
+.upcoming img {
+    width: 60%;
+    height: 60vh;
 }
  hr {
     width: 80%;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 #aboutus {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
 }
 #aboutus .aboutus {
-    background: url(9.jpg);
+    background: url(images/back.jpg);
+    filter:sepia(30%);
     background-size: cover;
     padding: 20px;
     width: 90%;
@@ -148,23 +158,8 @@ span p#month {
 }
 .aboutus a:hover {
     text-decoration: overline;
+    background-color: transparent;
 }
-/*.services {
-    width: 100%;
-    overflow: hidden;
-    padding: 5px;
-
-}
-#services {
-    width: 30%;
-    height: 50%;
-    font-size: 13px;
-    border: 1px solid ;
-    padding: 2px;
-}
-#services img {
-    width: 100%;
-}*/
 .showcase h3 {
     font-size: 1.5em;
     text-align: center;
@@ -201,13 +196,23 @@ span p#month {
 .sections a:hover {
     color: black;
     text-decoration: underline;
+    background-color: transparent;
 }
-
-
 .exception {
         display: none;
     }
-@media only screen and (min-width: 600px) {
+
+@keyframes bgchange {
+  0%   {background: url(images/clearbarpic1.jpg); background-origin: center;
+    background-size: cover;}
+  50%  {background: url(images/12.jpeg); background-origin: center;
+    background-size: cover;}
+  100% {background: url(images/headpic1.jpg); background-origin: center;
+    background-size: cover;}
+}
+
+
+@media only screen and (min-width: 700px) {
     body {
         display: flex;
         justify-content: center;
@@ -219,7 +224,8 @@ span p#month {
     .exception {
         display: flex;
         align-items: center;
-        margin-top: 50%;
+        justify-items: center;
+        margin: 15%;
         padding: 20px;
     }
     .exception p {

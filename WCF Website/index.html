@@ -16,22 +16,23 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
     <link href="navbar.css" rel="stylesheet" type="text/css">
     <link href="execslider.css" rel="stylesheet" type="text/css">
     <link href="alumnislider.css" rel="stylesheet" type="text/css">
-
+    <link href="countdown.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body>
     <div id="everything">
     <div class="headbar">
         <div class="logo">
-            <img src="wcflogo1.png" height="30px" width="30px"><img src="yaflogo.png" height="30px" width="30px"><span>winners campus fellowship,FUTA</span>
+            <img src="images/wcflogo1.png" height="30px" width="30px"><img src="images/yaflogo.png" height="30px" width="30px"><span>winners campus fellowship,FUTA</span>
         </div>
         <span class="nav">
             <i class="fa-solid fa-bars" onclick="navShow()"></i>
-            <button type="button" onclick="window.open('http://www.youtube.com/@wcffuta-media');">Connect</button>
+            <button type="button" onclick="window.open('http://www.youtube.com/@wcffuta-media');">Live</button>
         </span>
     </div>
     <nav id="nav" class="navcontent">
         <i class="fa-solid fa-xmark" onclick="navHide()"></i>
-        <ul>
+        <ul id="list-container">
             <li><a href="#">Home</a></li>
             <li><a href="aboutUs.html">About</a></li>
             <li><a href="#">Services</a></li>
@@ -59,9 +60,56 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
     <span>
             <p id="day">25</p>
             <p id="month">AUG</p>
-        </span><a id="program" href="#">WCF WEEK 25</a>
+        </span><p id="program">WCF WEEK 25</p>
+        <img src="images/roses.jpg" alt="program">
     </div><hr><br>
-    <script src="wcffuta.js"></script>
+    
+    <div class="everything">
+    <div class="countdown-container">
+        <h1 class="title">HOURS TO NEXT WCFWEEK PROGRAM</h1>
+        
+        <div class="time-container">
+            <div class="time-block">
+                <div class="time-card" id="days-card">
+                    <div class="time-card-face time-card-front">14</div>
+                    <div class="time-card-face time-card-back">13</div>
+                </div>
+                <div class="time-label">Days</div>
+            </div>
+            
+            <div class="time-block">
+                <div class="time-card" id="hours-card">
+                    <div class="time-card-face time-card-front">23</div>
+                    <div class="time-card-face time-card-back">22</div>
+                </div>
+                <div class="time-label">Hours</div>
+            </div>
+            
+            <div class="time-block">
+                <div class="time-card" id="minutes-card">
+                    <div class="time-card-face time-card-front">59</div>
+                    <div class="time-card-face time-card-back">58</div>
+                </div>
+                <div class="time-label">Minutes</div>
+            </div>
+            
+            <div class="time-block">
+                <div class="time-card" id="seconds-card">
+                    <div class="time-card-face time-card-front">59</div>
+                    <div class="time-card-face time-card-back">58</div>
+                </div>
+                <div class="time-label">Seconds</div>
+            </div>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <div class="message" id="message">Time to experince God in another dimension again! <br>Connect with us using the connect button on top-right corner!</div>
+    </div>
+    </div>
+        
     <div id="aboutus">
         <div class="aboutus">
             <span>
@@ -70,19 +118,12 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <a href="aboutUs.html">Learn more <i class="fa-solid fa-arrow-right"></i></a>
             </span></div>
         </div><hr>
-    <!--<div class="services">
-        <div id="services">rgb
-            <img src="Servants of Christ.png">
-            <P>WORKERS RETREAT</P>
-        </div>
-    </div>-->
     <div class="showcase">
         <h3>We are more than a fellowship, we are <span style="color: rgb(177, 4, 4);">destiny moulders</span></h3>
         <div class="sections">
             <p id="head">Academic Excellency</p>
-            <img src="academic-2.jpg" alt="">
+            <img src="images/academic.jpg" alt="">
             <p>We don't sweat to have excellent results, our academic results speaks for us.</p>
-            <a href="academic.html">Show more <i class="fa-solid fa-arrow-right"></i></a> 
         </div>
                 <div class="slide">
     <ul>
@@ -93,9 +134,9 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
             <p><span>Department</span>: Information System</p>
             <p><span>Grade</span>: FirstClass Degree</p>
             <p><span>GPA</span>: 4.89</p>
-            <p>Fav bible verse<span  style="color: orange;"> "Trust in the LORD with all your head and HE shall not forsake you....</span></p>
+            <p>Fav bible verse<span  style="color: orange;"> "Trust in the LORD with all your heart and HE shall not forsake you....</span></p>
             </div>
-            <img src="1.jpg">
+            <img src="images/presi.jpg">
         </div></li>
         <li><div class="item">
             <div id="content-container">
@@ -104,9 +145,9 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
             <p><span>Department</span>: Agriculture Resource and Economics</p>
             <p><span>Grade</span>: Secondclass Upper Degree</p>
             <p><span>GPA</span>: 4.46</p>
-            <p>Fav bible verse:<span  style="color: orange;"> "Trust in the LORD with all your head and HE shall not forsake you....</span></p>
+            <p>Fav bible verse:<span  style="color: orange;"> "Trust in the LORD with all your heart and HE shall not forsake you....</span></p>
             </div>
-            <img src="2.jpg">
+            <img src="images/seun.jpg">
         </div></li>
         <li><div class="item">
             <div id="content-container">
@@ -114,32 +155,32 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
             <p><span>Office</span>: 500 Level Coord</p>
             <p><span>Department</span>: Information Technology</p>
             <p><span>Grade</span>: FirstClass Degree</p>
-            <p><span>GPA</span>: 4.59</p>
-            <p>Fav bible verse:<span  style="color: orange;"> "Trust in the LORD with all your head and HE shall not forsake you....</span></p>
+            <p><span>GPA</span>: 4.64</p>
+            <p>Fav bible verse:<span  style="color: orange;"> "Trust in the LORD with all your heart and HE shall not forsake you....</span></p>
 
             </div>
-            <img src="4.jpg">
+            <img src="images/ajax.jpg">
         </div></li>
         <li><div class="item">
             <div id="content-container">
-            <p><span>Name</span>:: Adeyinka Asaolu</p>
+            <p><span>Name</span>:: Adegbenro Love</p>
             <p><span>Office</span>: Female Coordinator (500l), Publicity Unit coord (400l)</p>
-            <p><span>Department</span>: Information System</p>
+            <p><span>Department</span>: Geoinformatics</p>
             <p><span>Grade</span>: FirstClass Degree</p>
             <p><span>GPA</span>: 4.89</p>
-            <p>Fav bible verse:<span  style="color: orange;"> "Trust in the LORD with all your head and HE shall not forsake you....</span></p>
+            <p>Fav bible verse:<span  style="color: orange;"> "Trust in the LORD with all your heart and HE shall not forsake you....</span></p>
 
             </div>
-            <img src="5.jpg">
+            <img src="images/5.jpg">
         </div></li>
     </ul>
     </div>
       
         <div class="sections">
             <p id="head">Alumni</p>
-            <img src="7.jpeg" alt="">
+            <img src="images/alumnipic1.png" alt="">
             <p>WCFFUTA has not only been a place of Spiritual growth but also a place Giants are Raised.</p>
-            <a href="#">Show more <i class="fa-solid fa-arrow-right"></i></a> 
+            <a href="academic.html">See more <i class="fa-solid fa-arrow-right"></i></a> 
         </div>
     </div>
 
@@ -149,74 +190,74 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
         <button class="nav-btn1 next-btn" onclick="scrollSlider1(1)">❯</button>
         <div class="slider-track" id="sliderTrack1">
             <div class="alumni-container">
-            <img src="1.jpg">
+            <img src="images/1.jpg">
             <div id="exec-text">
                 <span>ADEYINKA ASAOLU</span>
                 <p id="occupation">CEO and Founder of ZOE Nation</p>
                 <p>I am he that calleth and aswereth. who areyou? I am a chosen</p>
                 <p id="title"> ASS COORDINATOR</p>
                 <p>2023/2024 set </p>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/light_olayinka?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div></div>
             <div class="alumni-container">
-            <img src="4.jpg">
+            <img src="images/4.jpg">
             <div id="exec-text">
                 <span>OLUFEMI KING DAVID</span>
                 <p id="occupation">CEO and Founder of TKD Enterprise</p>
                 <p>I am he that calleth and aswereth. who areyou? I am a chosen</p>
                 <p id="title"> PUBLICITY UNIT COORD</p>
                 <p>2024/2025 set </p>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/king_david_olufemi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div></div>
             <div class="alumni-container">
-            <img src="5.jpg">
+            <img src="images/5.jpg">
             <div id="exec-text">
                 <span>ADEGBENRO LOVE</span>
                 <p id="occupation">CEO and Founder of Lovelylove</p>
                 <p>I am he that calleth and aswereth. who areyou? I am a chosen</p>
                 <p id="title"> ASS COORDINATOR</p>
                 <p>2024/2025 set </p>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/love_oluwabukola?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div></div>
             <div class="alumni-container">
-            <img src="1,,.jpg">
+            <img src="images/jesusboy.jpg">
             <div id="exec-text">
                 <span>JESUS BOY</span>
-                <p id="occupation">GOSPEL COMEDIAN AND POET</p>
+                <p id="occupation">GOSPEL COMEDIAN, CONTENT CREATOR AND MC</p>
                 <p>I am he that calleth and aswereth. who areyou? I am a chosen</p>
                 <p id="title">DRAMA UNIT COORD</p>
                 <p>2018/2019 set </p>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/dareayo43?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div></div>
             <div class="alumni-container">
-            <img src="pdi.jpg">
+            <img src="images/pdi.jpg">
             <div id="exec-text">
                 <span>PRINCE DAVID IYKE</span>
-                <p id="occupation">CEO of Iyke Graphics</p>
+                <p id="occupation">CEO of Iykesvisuals</p>
                 <p>I am he that calleth and aswereth. who areyou? I am a chosen</p>
                 <p id="title"> ASS COORDINATOR</p>
                 <p>2023/2024 set </p>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/iykesvisuals?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div></div>
             <div class="alumni-container">
-            <img src="fresh.jpg">
+            <img src="images/fresh.jpg">
             <div id="exec-text">
                 <span>ELEBUTE OLANREWAJU</span>
                 <p id="occupation">Web expert and content creator</p>
                 <p>I am he that calleth and aswereth. who areyou? I am a chosen</p>
                 <p id="title">HOSPITALITY COORDINATOR</p>
                 <p>2023/2024 set </p>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/freshly_tech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div></div>
@@ -231,7 +272,7 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
         <button class="nav-btn next-btn" onclick="scrollSlider(1)">❯</button>
         <div class="slider-track" id="sliderTrack">
             <div class="exec-container">
-            <img src="presi.jpg">
+            <img src="images/presi.jpg">
             <div id="exec-text">
                 <span>AKINNIYI IFEOLUWA</span>
                 <p id="title" style="color: orange;">COORDINATOR 001</p>
@@ -239,7 +280,7 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <p>500L</p>
             </div></div>
             <div class="exec-container">
-            <img src="mama.jpg">
+            <img src="images/mama.jpg">
             <div id="exec-text">
                 <span>MATTHEW MARY</span>
                 <p id="title">ASS COORDINATOR</p>
@@ -247,7 +288,7 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <p>500L</p>
             </div></div>
             <div class="exec-container">
-            <img src="seun.jpg">
+            <img src="images/seun.jpg">
             <div id="exec-text">
                 <span>ADEKIYA SEUNFUNMI</span>
                 <p id="title">GENERAL SECRETARY</p>
@@ -255,15 +296,15 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <p>500L</p>
             </div></div>
             <div class="exec-container">
-            <img src="temi.jpg">
+            <img src="images/temi.jpg">
             <div id="exec-text">
-                <span>SOMETHING TEMI</span>
+                <span>OLAYEMI TEMIDAYO</span>
                 <p id="title">FINANCIAL SECRETARY</p>
                 <p>all glory to god for this oppotunity and priviledge to be a tool for his kingdom. All Glory be to his name. Amen</p>
                 <p>500L</p>
             </div></div>
             <div class="exec-container">
-            <img src="1,,.jpg">
+            <img src="images/drip.jpg">
             <div id="exec-text">
                 <span>ADEBOYE GODSPOWER</span>
                 <p id="title">SPECIAL DUTY</p>
@@ -271,7 +312,7 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <p>500L</p>
             </div></div>
             <div class="exec-container">
-            <img src="elijah.jpg">
+            <img src="images/elijah.jpg">
             <div id="exec-text">
                 <span>OLABOSINDE ELIJAH</span>
                 <p id="title">PUBLICITY UNIT COORD</p>
@@ -279,7 +320,7 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <p>400L</p>
             </div></div>
             <div class="exec-container">
-            <img src="todi.jpg">
+            <img src="images/todi.jpg">
             <div id="exec-text">
                 <span>LEBI OLUWATODIMU</span>
                 <p id="title">PRAYER UNIT COORD</p>
@@ -287,7 +328,7 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <p>400L</p>
             </div></div>
             <div class="exec-container">
-            <img src="1,,.jpg">
+            <img src="images/bamidele.jpg">
             <div id="exec-text">
                 <span>BAMIDELE EMMANUEL</span>
                 <p id="title">ORGANIZING UNIT COORD</p>
@@ -295,7 +336,7 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <p>500L</p>
             </div></div>
             <div class="exec-container">
-            <img src="aladire.jpg">
+            <img src="images/aladire.jpg">
             <div id="exec-text">
                 <span>BELLO PRAISE</span>
                 <p id="title">USHERING UNIT COORD</p>
@@ -303,7 +344,7 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <p>400L</p>
             </div></div>
             <div class="exec-container">
-            <img src="ac.jpg">
+            <img src="images/ac.jpg">
             <div id="exec-text">
                 <span>LASEKAN OLUWAFISAYO</span>
                 <p id="title">ACADEMIC UNIT COORD</p>
@@ -311,7 +352,7 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <p>300L</p>
             </div></div>
             <div class="exec-container">
-            <img src="joy.jpg">
+            <img src="images/joy.jpg">
             <div id="exec-text">
                 <span>ADEBULE JOY</span>
                 <p id="title">DRAMA UNIT COORD</p>
@@ -319,7 +360,7 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <p>400L</p>
             </div></div>
             <div class="exec-container">
-            <img src="1,,.jpg">
+            <img src="images/abah.jpg">
             <div id="exec-text">
                 <span>ABAH SAMUEL</span>
                 <p id="title">CHOIR UNIT COORD</p>
@@ -327,7 +368,15 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
                 <p>500L</p>
             </div></div>
             <div class="exec-container">
-            <img src="tantie.jpg">
+            <img src="images/gbemi.jpg">
+            <div id="exec-text">
+                <span>AWOLOLA GBEMISOLA</span>
+                <p id="title">SANCTUARY UNIT COORD</p>
+                <p>all glory to god for this oppotunity and priviledge to be a tool for his kingdom. All Glory be to his name. Amen</p>
+                <p>500L</p>
+            </div></div>
+            <div class="exec-container">
+            <img src="images/tantie (2).jpg">
             <div id="exec-text">
                 <span>ADEYEMI TANTOLUWA</span>
                 <p id="title">EVANG UNIT COORD</p>
@@ -364,11 +413,11 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
     <div class="clearbar">
         <div class="mail">
             <h3>Join Our mailing list</h3>
-            <p style="margin: 20px; color: rgba(216, 167, 167, 0.678);">Filling the form below to get notified for our special services, we promise not to spam.</p>
-            <span>
+            <p style="margin: 20px; color: rgba(216, 167, 167, 0.678);">Fill the form below to get notified for our special services, we promise not to spam.</p>
+            <span><form  action="https://formspree.io/f/xeozzbvk" method="POST">
                 <input type="email" name="email" placeholder="Email address" !important>
-                <input type="tel" name="whatsapp" placeholder="Whatsapp number" style="width: 30vw;">
-                <input type="submit" style="width: 30%; background-color: rgb(177, 4, 4); color: white; cursor: pointer;">
+                <input type="tel" name="whatsapp" placeholder="Whatsapp number" style="width: 25vw;">
+                <input type="submit" style="width: 20%; background-color: rgb(177, 4, 4); color: white; cursor: pointer;"></form>
             </span>
         </div><hr>
         <div class="listcon">
@@ -390,9 +439,9 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
         <div id="links">
             <ul>
                 <li>RESOURCES</li>
-                <li><a href="#">Tutorials</a><li>
-                <li><a href="#">Spiritual Books</a><li>
-                <li><a href="#">Academic Books</a><li>
+                <li><a href="https://youtube.com/@wcffuta-media?si=oQRdFhxHxQ-UDD0U">Tutorials</a><li>
+                <li><a href="https://drive.google.com/drive/folders/1Zr1wrZYAovmGCDdsSD-O0xSJhCYnC5CU">Spiritual Books</a><li>
+                <li><a href="https://drive.google.com/drive/folders/1Zr1wrZYAovmGCDdsSD-O0xSJhCYnC5CU">Academic Books</a><li>
             </ul>
         </div>
         <div id="links">
@@ -413,5 +462,7 @@ Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100.
     <div class="exception">
         <p>Page not available for desktop, please switch back to mobile/ turnoff desktop site</p>
     </div>
+    <script src="countdown.js"></script>
+    <script src="wcffuta.js"></script>
 </body>
 </html>

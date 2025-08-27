@@ -50,7 +50,7 @@
       
  .exec-container {
     scroll-snap-align: start;
-    height: 40vh;
+    height: auto;
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
